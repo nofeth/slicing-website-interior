@@ -7,25 +7,26 @@ function App() {
   function hiddenNavbar() {
     setActive(active ? false : true)
   }
+
   useEffect(() => {
 
   },[])
    return (
     <>
-      <header className='flex justify-between relative  container'>
+      <header className='flex justify-between  relative container'>
         <h1 className='ml-5 md:ml-0 uppercase py-10 font-semibold'>Interior.co</h1>
-        <button type='button' ref={hamburger} onClick={() => hiddenNavbar()} className='hamburger block mr-5'>
+        <button type='button' ref={hamburger} onClick={() => hiddenNavbar()} className={`${active ? 'block' : 'hidden'} hamburger mr-5 md:hidden`}>
           <span className='w-[40px] h-1 block my-2 bg-black'></span>
           <span className='w-[40px] h-1 block my-2 bg-black'></span>
           <span className='w-[40px] h-1 block my-2 bg-black'></span>
         </button>
-        <nav className={`${active ? 'translate-x-full' : 'translate-x-0'} translate ease-out duration-500 md:flex gap-9 lg:gap-16 xl:gap-28 2xl:gap-36 flex items-center pt-10 flex-col h-full bg-white fixed max-w-[300px] w-full z-20 right-0`} hidden={active}>
+        <nav className={`${active ? 'translate-x-full' : 'translate-x-0'} md:translate-x-0  translate md:transition-none ease-out duration-500 gap-9 lg:gap-16 xl:gap-28 2xl:gap-36 flex items-center pt-10 md:pt-0 md:flex-row flex-col h-full md:h-auto  bg-white md:bg-transparent md:static fixed md:max-w-none max-w-[300px] md:w-auto w-full z-20 right-0`}>
           <Link to="/">Home</Link>
           <Link to="#">About</Link>
           <Link to="#">Favourites</Link>
           <Link to="#">Lifestyle</Link>
           <Link to="#">Get Started</Link>
-          <Link to="#" onClick={hiddenNavbar} >
+          <Link className='md:hidden' to="#" onClick={hiddenNavbar} >
           <i className="uil uil-arrow-right text-4xl"></i>
           </Link>
         </nav>

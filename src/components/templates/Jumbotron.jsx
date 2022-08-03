@@ -14,10 +14,10 @@ export default function Jumbotron(){
                 <button className="px-10 bg-[#F9A309]  text-white" ><i className="text-4xl uil uil-search"></i></button>
             </div>
             </article>
-            <article className="flex gap-3 md:order-2 order-1 w-full lg:w-1/2 mx-5 md:mx-auto">
-                <img className="self-start w-full lg:w-1/2 h-4/5 object-cover" src={image1} alt="" />
-                <img className="self-center w-full  h-4/5 lg:w-1/2  object-cover" src={image2} alt="" />
-                <img className="w-full object-cover lg:w-1/2" src={image3} alt="" />
+            <article className="flex gap-3 md:order-2 order-1 w-full border-4 lg:w-full mx-5 md:mx-auto">
+                <img className=" object-cover" src={image1} alt="" />
+                <img className=" object-cover" src={image2} alt="" />
+                <img className=" h-4/5 lg:w-1/3" src={image3} alt="" />
             </article>
             </div>
         </section>
