@@ -5,7 +5,7 @@ import image3 from '../../assets/img/3.jpg'
 export default function Jumbotron(){
     return (
         <section className='container'>
-            <div className='flex gap-5 md:flex-nowrap relative flex-wrap h-[700px] mt-20 mx-5 md:mx-auto'>
+            <div className='flex gap-5 relative flex-col md:flex-row h-[700px] mt-20 mx-5 md:mx-auto'>
             <article className="flex flex-col md:order-1 order-2 max-w-xl grow justify-center  ">
                 <h1 className="text-4xl font-medium sm:text-5xl lg:text-7xl">We Help to Make Modern Interior</h1>
                 <p className="w-3/4 font-normal text-lg mt-4 text-[#9FA1AD]">We combine interior and Exterior design services and often provide them as a single solution.It helps us...</p>
@@ -14,10 +14,16 @@ export default function Jumbotron(){
                 <button className="px-10 bg-[#F9A309]  text-white" ><i className="text-4xl uil uil-search"></i></button>
             </div>
             </article>
-            <article className="flex gap-3 md:order-2 order-1 w-full border-4 lg:w-full mx-5 md:mx-auto">
-                <img className=" object-cover" src={image1} alt="" />
-                <img className=" object-cover" src={image2} alt="" />
-                <img className=" h-4/5 lg:w-1/3" src={image3} alt="" />
+            <article className="flex w-full order-1 md:order-2 gap-3">
+                <div className='self-start w-full lg:w-1/2 h-4/5'>
+                    <img className="w-full h-full object-cover" src={image1} alt="" />
+                </div>
+                <div className='w-full self-center h-4/5 lg:w-1/2'>
+                    <img className="w-full h-full  object-cover" src={image2} alt="" />
+                </div>
+                <div className='w-full lg:w-1/2'>
+                    <img className="w-full h-full object-cover " src={image3} alt="" />
+                </div>
             </article>
             </div>
         </section>
