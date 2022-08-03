@@ -27,7 +27,7 @@ export default function PerfectScalling(){
                     <p className='opacity-60 text-base lg:text-xl'>From fashion weeks without shows to brands abandoning the traditional schedules. Covid 19 has thrown the industry into a state of flux</p>
                     <div className='flex items-center'>
                         <span className='w-5 h-5 flex mr-2 justify-center items-center rounded-full bg-white'>
-                        <i class="uil uil-arrow-right animate-bounce"></i>
+                        <i className="uil uil-arrow-right animate-bounce"></i>
                         </span>
                         <p className='text-xs sm:text-sm font-medium font-sans'> BY ADE OKTAVIANO</p>
                     </div>
