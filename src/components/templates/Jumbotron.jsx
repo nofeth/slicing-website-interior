@@ -14,7 +14,7 @@ export default function Jumbotron(){
                 <button className="px-10 bg-[#F9A309]  text-white" ><i className="text-4xl uil uil-search"></i></button>
             </div>
             </article>
-            <article className="flex w-full order-1 md:order-2 gap-3">
+            <article className="flex w-full h-full order-1 md:order-2 gap-3">
                 <div className='self-start w-full lg:w-1/2 h-4/5'>
                     <img className="w-full h-full object-cover" src={image1} alt="" />
                 </div>
